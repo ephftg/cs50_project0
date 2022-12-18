@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <!--link to the other webpages-->
+        <div class="top_right">
+            <a class="link" href="image.html">Image Search</a>
+            <a class="link" href="advance.html">Advanced Search</a>
+
+        </div>
+
+        <!-- action="https://www.google.com/search specify that when the form is submited
+            input will be sent to https://www.google.com/search. Input has name as q, 
+            and for google search the q=value is GET parameter for the search -->
+
+        <div class="main">
+            <div class="image_position">
+                <img src="Google_logo.png" alt="Google" width="300">
+            </div>
+
+            <form action="https://www.google.com/search">
+                <!-- specify the input name as q and the type of input to be text-->
+                <div>
+                    <input class="search_input" type="text" name="q">
+                </div>
+
+                <div>
+                     <!--submit buttom with text Google Search on it-->
+                    <input class="search_button" type="submit" value="Google Search">
+                    <input class="search_button" type="submit" value="I’m Feeling Lucky" name="btnI">
+
+                </div>
+            </form>
+
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!--https://www.google.com/search?as_q=a&as_epq=b&as_oq=c&as_eq=d-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <!--link to the other webpages-->
+        <div class="top_right">
+            <a class="link" href="index.html">Google Search</a>
+
+        </div>
+
+        <h1 style="padding: 20px;"> Advanced Search</h1>
+
+        <hr id="line">
+        <br>
+
+        <br>
+        <div>
+
+            <form action="https://www.google.com/search">
+
+                <div class="grid">
+                    <div style="font-size: larger;">Find pages with...</div>
+                    <div> </div>
+
+                    <div class="middle">all these words:</div>
+                    <div><input class="box_input" type="text" name="as_q"></div>
+    
+                    <div class="middle">this exact word or phrase:</div>
+                    <div><input class="box_input" type="text" name="as_epq"></div>
+
+                    <div class="middle">any of these words:</div>
+                    <div><input class="box_input" type="text" name="as_oq"></div>
+
+                    <div class="middle">none of these words:</div>
+                    <div ><input class="box_input" type="text" name="as_eq"></div>
+
+                    <div></div>
+                    <div><input class="advanced_button" type="submit" value="Advanced Search"></div>
+                </div>
+                <!-- specify the input name as q and the type of input to be text-->
+                <!--as_q=a&as_epq=b&as_oq=c&as_eq=d-->
+            </form>
+        </div>
+
+    </body>
+</html>

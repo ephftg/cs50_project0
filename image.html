@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image</title>
+        <link rel="stylesheet" href="webstyle.css">
+    </head>
+    <body>
+        <!--link to the other webpages-->
+        <div class="top_right">
+            <a class="link" href="index.html">Google Search</a>
+
+        </div>
+
+
+        <div class="main">
+
+            <div class="image_position">
+                <img src="Google_Images_logo.png" alt="Google image" width="300">
+            </div>
+            
+            <!--https://www.google.com/search?q=pear&tbm=isch-->
+
+            <form action="https://www.google.com/search?">
+
+                <!--specify the input name as q and the type of input to be text-->
+                <div>
+                    <input class="search_input" type="text" name="q"> 
+                    <!-- concantenate the input with a value that cannot be modified so is hidden type-->
+                    <input name="tbm" value="isch" type="hidden">
+                    <!--submit buttom with text Google Search on it-->
+                    <input class="search_button" type="submit" value="Google Search">
+                </div>
+
+            </form>
+
+
+  
+            
+
+        </div>
+    </body>
+</html>

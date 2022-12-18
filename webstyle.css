@@ -1,0 +1,119 @@
+/* general style for font size and color*/
+div {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: orangered;
+}
+
+#line {
+    color: rgb(242, 240, 240);
+}
+
+/* link at top right hand corner to go to other pages*/
+.top_right {
+    text-align: right;
+}
+
+.link {
+    text-decoration: none;
+    color: gray;
+    padding: 3px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* make the search division centered on the webpage*/
+.main {
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* this is the position of the image*/
+.image_position{
+    text-align:center;
+}
+
+/* search button for Google search/I am feeling lucky*/
+.search_button {
+    background-color: whitesmoke;
+    border:1px solid transparent;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-right: 5px;
+    margin-top: 40px;
+}
+
+.search_button:hover {
+    border: 1px solid #d0d0d0;
+}
+
+
+/* search input is where user key in the input for the search*/
+.search_input {
+    border-radius: 30px;
+    padding: 10px;
+    width: 600px;
+    height: 20px; 
+    border:1px solid lightgray;
+    position: relative;
+    top: 46%;
+}
+
+.search_input:hover {
+    box-shadow: 0px 2px 5px 0px rgba(207, 205, 205, 0.5)
+}
+
+.search_input:focus {
+    outline: 1px solid lightgray;
+    box-shadow: 0px 2px 5px 0px rgba(207, 205, 205, 0.5)
+}
+
+/* arragement of the input boxes for advanced search */
+.grid {
+    display: grid;
+    padding: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 200px auto;
+
+}
+
+/* input box for advanced search which will be foocused when click to input specific terms*/
+.box_input {
+    width: 60%;
+    height: 30px; 
+    border:1px solid lightgray;
+}
+
+.box_input:focus {
+    outline: 1px solid rgb(0, 183, 255);
+
+}
+
+/* center in the division grid for the names of the input boxes*/
+.middle {
+    display: flex;
+    align-items: center; 
+}
+
+/* advanced search button for advanced search*/
+.advanced_button {
+    background-color: rgb(0, 102, 255);
+    color: white;
+    border:1px solid darkblue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
