@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %} 
+    Search result 
+{% endblock %}
+
+<!-- got_substring is all entries where search input is a substring of the name of entry--->
+{% block body %} 
+    <h1> List of search results: </h1>
+    <ul>
+        {% for k in got_substring %}
+            
+            <li><a href="wiki/{{k}}">{{k}}</a></li>
+  
+        {% empty %} <!-- this is to check if got_substring is empty or not, if empty then say no matches found-->
+            <li> No matches found </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

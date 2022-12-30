@@ -1,0 +1,30 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Create new page
+{% endblock %}
+
+<!-- display input boxes for user to add new entry-->
+{% block body %}
+
+{% if error %}
+<div class="alert alert-danger alert-dismissible fade show" style="text-align:center" width="100%">
+    <strong>Error!</strong> Entry has already been created. You can view the page 
+    <a href="wiki/{{entry_title}}">here</a>
+</div>
+{% endif %}
+
+<form action="{% url 'create_new' %}" method="post">
+    {% csrf_token %}
+    <!-- put the form in table form so that the different input are in different lines-->
+    <table width="100%">
+        {{ newpageform.as_table}}
+    </table>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    
+</form>
+
+{% endblock %}
+
+
